@@ -1,5 +1,11 @@
 # react-validation-code
 
+<img src="./example-images/base.png" alt="base" title="base style" />
+* * * * * * * * * * * *
+<img src="./example-images/done.png" alt="done" title="done style" />
+* * * * * * * * * * * *
+<img src="./example-images/hasProps.png" alt="hasProps" title="hasProps style" />
+
 ## 描述
 
 ```bash
@@ -11,6 +17,25 @@
 ```bash
 react
 webpack4
+```
+
+## Install
+
+```js
+npm install react-validation-code
+```
+
+## Usage
+
+```js
+import VCode from "react-validation-code";
+
+function getResult(r) {
+  console.log(r);
+}
+const App = () => (
+  <VCode getResult={getResult} tips tipsWord="换一张" className="xxx" />
+);
 ```
 
 ## props
