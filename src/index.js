@@ -82,7 +82,7 @@ export default class VCode extends Component {
   render() {
     const { originStr, inputStr, colorArr } = this.state;
     let result = originStr === inputStr.toUpperCase();
-    const { tips, tipsWord, className } = this.props;
+    const { tips, tipsWord, className, placeholder } = this.props;
 
     return (
       <div className={className ? `v-code ${className}` : `v-code`}>
@@ -92,7 +92,7 @@ export default class VCode extends Component {
             style={{ width: "140px" }}
             value={inputStr}
             onChange={this.handleInputChange}
-            placeholder="请输入验证码"
+            placeholder={placeholder || "请输入验证码"}
           />
           {inputStr ? (
             result ? (
