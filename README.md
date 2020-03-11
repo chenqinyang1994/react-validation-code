@@ -1,9 +1,7 @@
 # react-validation-code
 
 <img src="./example-images/base.png" alt="base" title="base style" />
-* * * * * * * * * * * *
 <img src="./example-images/done.png" alt="done" title="done style" />
-* * * * * * * * * * * *
 <img src="./example-images/hasProps.png" alt="hasProps" title="hasProps style" />
 
 ## 描述
