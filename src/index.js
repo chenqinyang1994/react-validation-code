@@ -82,7 +82,7 @@ export default class VCode extends Component {
   render() {
     const { originStr, inputStr, colorArr } = this.state;
     let result = originStr === inputStr.toUpperCase();
-    const { tips, tipsWord, className, placeholder } = this.props;
+    const { tips, tipsWord, className, placeholder, doneCom, errorCom } = this.props;
 
     return (
       <div className={className ? `v-code ${className}` : `v-code`}>
@@ -96,9 +96,9 @@ export default class VCode extends Component {
           />
           {inputStr ? (
             result ? (
-              <img src={DoneSvg} alt="Done" className="result-icon" />
+                doneCom || <img src={DoneSvg} alt="Done" className="result-icon" />
             ) : (
-              <img src={ErrorSvg} alt="Error" className="result-icon" />
+                errorCom || <img src={ErrorSvg} alt="Error" className="result-icon" />
             )
           ) : null}
         </div>

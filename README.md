@@ -39,6 +39,8 @@ const App = () => (
     tipsWord="换一张"
     className="xxx"
     placeholder="xxx"
+    doneCom={ReactNode}
+    errorCom={ReactNode}
   />
 );
 ```
@@ -52,3 +54,5 @@ const App = () => (
 | placeholder | input 的 placeholder       | <font color=red >string</font>   | 无     |
 | tips        | 是否显示点击切换验证码按钮 | <font color=red >boolean</font>  | false  |
 | tipsWord    | 切换验证码按钮文字         | <font color=red >string</font>   | 无     |
+| doneCom     | 可以写个ReactNode替换自带的验证成功图片  | <font color=red >string or ReactNode</font>   | 无     |
+| errorCom    | 可以写个ReactNode替换自带的验证失败图片  | <font color=red >string or ReactNode</font>   | 无     |
